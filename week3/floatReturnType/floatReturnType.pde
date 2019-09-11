@@ -31,6 +31,6 @@ void draw() {
 //remember your parameters are going to be the variables that you want to alter 
 //every time you call the function 
 float calculateDistance(float shapeX, float shapeY) {
-  float dist = dist(mouseX, mouseY, shapeX, shapeY); 
+  float dist = sqrt(sq(shapeX - mouseX) + sq(shapeY - mouseY));
   return dist;
 }
