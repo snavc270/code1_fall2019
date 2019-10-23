@@ -1,4 +1,4 @@
-class Ship{
+2class Ship{
     color col;
     PVector position; 
     PVector velocity; 
