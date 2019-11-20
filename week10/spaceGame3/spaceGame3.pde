@@ -9,8 +9,10 @@ void setup(){
 
   myPlayer = new Player(); 
   
-  for(int i =0; i<20; i++){
-    myShips.add(new Ship(random(0,width), random(0,height))); //initially position our ships randomly
+  for(int i =0; i<5; i++){
+    for(int j = 0; j<5; j++){
+    myShips.add(new Ship(i*100+100, j*100+100)); //using nested for loops to position our objects
+    }  
   }
 }
 
