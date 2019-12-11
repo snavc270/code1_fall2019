@@ -7,7 +7,8 @@ float d;
 void setup(){
   size(600, 600); 
   xPos = width/2; 
-  yPos = height/2; 
+  yPos = height/2;
+  noStroke(); 
 }
 
 void draw(){
@@ -21,9 +22,9 @@ void draw(){
     fill(255); 
   }
   if(circleClicked){
-    background(0, 255, 0); 
+    background(0); 
   }else{
-    background(255, 0, 0);
+    background(255);
   }
   
   println(circleClicked); 
